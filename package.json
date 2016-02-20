@@ -23,6 +23,7 @@
     "gulp-exec": "^2.1.2",
     "gulp-jade": "^1.1.0",
     "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^2.0.6"
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-trim": "^1.0.2"
   }
 }

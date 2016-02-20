@@ -4,7 +4,8 @@ var gulp      = require('gulp'),
     rename    = require('gulp-rename'),
     sass      = require('gulp-ruby-sass'),
     browser   = require('browser-sync'),
-    shell     = require('gulp-exec');
+    shell     = require('gulp-exec'),
+    trim      = require('gulp-trim');
 
 
 gulp.task('sass', function () {
@@ -18,7 +19,12 @@ gulp.task('sass', function () {
 
 gulp.task('jade', function() {
   return gulp.src('_source/_jade/**/*.*')
-  .pipe(jade())
+  .pipe(jade({
+    pretty: true
+  }))
+  .pipe(trim({
+    leading: false,
+  }))
   .pipe(gulp.dest('_source/'));
 });
 
