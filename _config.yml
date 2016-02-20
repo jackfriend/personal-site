@@ -1,0 +1,9 @@
+markdown: redcarpet
+source: _source
+destination: _site
+
+collections:
+  static:
+    output: true
+    permalink: :title.html
+    layout: base
