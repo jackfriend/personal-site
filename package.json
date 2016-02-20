@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/jackfriend/personal-site/issues"
   },
-  "homepage": "https://github.com/jackfriend/personal-site#readme"
+  "homepage": "https://github.com/jackfriend/personal-site#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-exec": "^2.1.2",
+    "gulp-jade": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6"
+  }
 }
