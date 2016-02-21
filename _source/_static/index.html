@@ -1,24 +1,10 @@
 ---
 layout: base
 ---
-{% include _nav.html %}
+{% include nav.html %}
 <div class="container article-container">
   <div class="wrapper article-wrapper">
-    <div style="height: 300px" class="article">1</div>
-    <div style="height: 200px" class="article">2</div>
-    <div style="height: 400px" class="article">3</div>
-    <div style="height: 400px" class="article">4</div>
-    <div style="height: 200px" class="article">5</div>
-    <div style="height: 200px" class="article">6</div>
-    <div style="height: 300px" class="article">7</div>
-    <div style="height: 400px" class="article">8</div>
-    <div style="height: 300px" class="article">9</div>
-    <div style="height: 200px" class="article">10</div>
-    <div style="height: 400px" class="article">11</div>
-    <div style="height: 400px" class="article">12</div>
-    <div style="height: 200px" class="article">13</div>
-    <div style="height: 200px" class="article">14</div>
-    <div style="height: 300px" class="article">15</div>
-    <div style="height: 400px" class="article">16</div>
+    {% for article in site.posts %}
+    <div class="article size{% cycle 'one', 'two', 'three' %}"></div>{% endfor %}
   </div>
 </div>

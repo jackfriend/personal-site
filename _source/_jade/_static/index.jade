@@ -2,24 +2,12 @@
 | layout: base
 | ---
 
-{% include _nav.html %}
+| {% include nav.html %}
 
 .container.article-container
   .wrapper.article-wrapper
-    .article(style="height: 300px") 1
-    .article(style="height: 200px") 2
-    .article(style="height: 400px") 3
-    .article(style="height: 400px") 4
-    .article(style="height: 200px") 5
-    .article(style="height: 200px") 6
-    .article(style="height: 300px") 7
-    .article(style="height: 400px") 8
-    .article(style="height: 300px") 9
-    .article(style="height: 200px") 10
-    .article(style="height: 400px") 11
-    .article(style="height: 400px") 12
-    .article(style="height: 200px") 13
-    .article(style="height: 200px") 14
-    .article(style="height: 300px") 15
-    .article(style="height: 400px") 16
+    | {% for article in site.posts %}
+    .article(class="size{% cycle 'one', 'two', 'three' %}")
+    | {% endfor %}
+    
     

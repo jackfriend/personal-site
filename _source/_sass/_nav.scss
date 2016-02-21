@@ -2,13 +2,13 @@
   0% {
     transform: translateX(-10px);
   }
-  25% {
+  45% {
     transform: translateX(-10px);
   }
-  40% {
+  60% {
     transform: translateX(0px);
   }
-  55% {
+  75% {
     transform: translateX(-10px);
   }
   100% {
@@ -17,7 +17,7 @@
 }
 
 .bounce {
-  animation: bounce 4s infinite;
+  animation: bounce 5s infinite;
 }
 
 .nav-wrapper {
@@ -37,6 +37,7 @@
 }
 
 .favicon {
+  display: block;
   width: 100px;
   height: 100px;
   margin: 0 auto;
@@ -54,9 +55,9 @@
   list-style: none;
 }
 
-.hamburger.fa {
+.fa-bars.fa, .fa-times.fa {
   display: none;
   position: absolute;
-  top: 18px;
-  right: 18px;
+  top: 15px;
+  right: 30px;
 }
