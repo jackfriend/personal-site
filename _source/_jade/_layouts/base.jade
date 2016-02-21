@@ -4,4 +4,8 @@ html
     link(rel="stylesheet", href="assets/index.css")
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
     title {{ page.title }}
-  body {{ content }}
+  body
+    | {{ content }}
+    script(src="https://code.jquery.com/jquery-2.2.0.min.js")
+    script(src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js")
+    script(src="assets/functions.js")

@@ -5,6 +5,8 @@ var gulp      = require('gulp'),
     sass      = require('gulp-ruby-sass'),
     browser   = require('browser-sync'),
     shell     = require('gulp-exec'),
+    cleancss  = require('gulp-cssbeautify'),
+    concat    = require('gulp-concat'),
     trim      = require('gulp-trim');
 
 
@@ -12,13 +14,14 @@ gulp.task('sass', function () {
   return sass('_source/_sass/imports.sass')
   .on('error', sass.logError)
   .pipe(prefix())
+  .pipe(cleancss())
   .pipe(rename('index.css'))
   .pipe(gulp.dest('_source/assets'));
 });
 
 
 gulp.task('jade', function() {
-  return gulp.src('_source/_jade/**/*.*')
+  return gulp.src('_source/_jade/*/*.*')
   .pipe(jade({
     pretty: true
   }))
@@ -38,15 +41,23 @@ gulp.task('browsersync', function () {
 });
 
 
+gulp.task('js', function () {
+  return gulp.src('_source/assets/_js/**/*.js')
+  .pipe(concat('functions.js'))
+  .pipe(gulp.dest('_source/assets/'));
+});
+
+
 gulp.task('build', function () {
   gulp.src('./')
   .pipe(shell('jekyll build'));
 });
 
 
-gulp.task('default', ['sass', 'jade', 'browsersync'],function() {
+gulp.task('default', ['sass', 'jade', 'js', 'browsersync'],function() {
   gulp.watch('_source/_sass/**/*.*', ['sass']);
   gulp.watch('_source/_jade/**/*.*', ['jade']);
-  gulp.watch(['_source/assets/**/*.*', '_source/_static/**/*.*', '_source/_includes/**/*.*', '_source/_layouts/**/*.*'], ['build']);
+  gulp.watch('_source/assets/_js/*.*', ['js']);
+  gulp.watch(['_source/assets/*.*', '_source/_static/**/*.*', '_source/_includes/**/*.*', '_source/_layouts/**/*.*'], ['build']);
   gulp.watch('_site/**/*.*').on('change', browser.reload);
 });

@@ -1,0 +1,14 @@
+.nav-container {
+  width: 160px;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+}
+
+.article-container {
+  width: calc(100% - 180px);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
