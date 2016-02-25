@@ -3,8 +3,7 @@ layout: base
 ---
 {% include nav.html %}
 <div class="container article-container">
-  <div class="wrapper article-wrapper">
-    {% for article in site.posts %}
+  <div class="wrapper article-wrapper">{% for article in site.posts %}
     <div class="article size{% cycle 'one', 'two', 'three' %}"></div>{% endfor %}
   </div>
 </div>

@@ -320,14 +320,14 @@ a:visited {
 
 @media screen and (max-width: 600px) {
     .nav-container.clicked {
-        -webkit-animation: slidedown 2s forwards;
-        animation: slidedown 2s forwards;
+        -webkit-animation: slidedown 1s forwards;
+        animation: slidedown 1s forwards;
     }
 
     .nav-container.clicked .nav-menu {
         display: block;
-        -webkit-animation: appear 2s forwards;
-        animation: appear 2s forwards;
+        -webkit-animation: appear 1s forwards;
+        animation: appear 1s forwards;
     }
 
     .nav-container.clicked .social-media {
@@ -335,8 +335,8 @@ a:visited {
         display: -webkit-inline-flex;
         display: -ms-inline-flexbox;
         display: inline-flex;
-        -webkit-animation: appear 2s forwards;
-        animation: appear 2s forwards;
+        -webkit-animation: appear 1s forwards;
+        animation: appear 1s forwards;
     }
 
     .nav-container.clicked .fa-times.fa {
@@ -348,18 +348,18 @@ a:visited {
     }
 
     .nav-container.unclicked {
-        -webkit-animation: slideup 2s forwards;
-        animation: slideup 2s forwards;
+        -webkit-animation: slideup 1s forwards;
+        animation: slideup 1s forwards;
     }
 
     .nav-container.unclicked .nav-menu {
-        -webkit-animation: disappear 2s forwards;
-        animation: disappear 2s forwards;
+        -webkit-animation: disappear 1s forwards;
+        animation: disappear 1s forwards;
     }
 
     .nav-container.unclicked .social-media {
-        -webkit-animation: disappear 2s forwards;
-        animation: disappear 2s forwards;
+        -webkit-animation: disappear 1s forwards;
+        animation: disappear 1s forwards;
     }
 }
 
@@ -450,12 +450,12 @@ a:visited {
 
 @media screen and (min-width: 376px) and (max-width: 480px) {
     div.article {
-        width: 170px;
-        margin: 20px;
+        width: 165px;
+        margin: 15px;
     }
 
     div.article-wrapper {
-        width: 420px;
+        width: 400px;
         margin: auto;
     }
 }
