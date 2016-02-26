@@ -1,3 +1,7 @@
+---
+author: Jack Friend
+---
+
 # CHAPTER IV
 
 ### The Rabbit Sends in a Little Bill

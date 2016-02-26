@@ -1,3 +1,7 @@
+---
+author: Jack Friend
+---
+
 CHAPTER VI
 
 Pig and Pepper

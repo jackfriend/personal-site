@@ -7,7 +7,11 @@
 .container.article-container
   .wrapper.article-wrapper
     | {% for article in site.posts %}
-    .article(class="size{% cycle 'one', 'two', 'three' %}")
+    .article(class="size{% cycle 'one', 'two', 'three' %}", href="#")
+      .article-image
+      .article-preview
+        h1 {{ article.title }}
+        h6.subheading {{ article.date }}
     | {% endfor %}
     
     

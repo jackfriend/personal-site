@@ -30,7 +30,7 @@
 
 @media screen and (min-width: 376px) and (max-width: 480px) {
   div.article {
-    width: 165px;
+    width: 160px;
     margin: 15px;
   }
   div.article-wrapper {
@@ -41,8 +41,8 @@
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
   div.article {
-    width: 157px;
-    margin: 10.25px;
+    width: 155px;
+    margin: 6px;
   }
   div.article-wrapper {
     width: 365px;
@@ -53,8 +53,18 @@
 @media screen and (max-width: 320px) {
   div.article {
     display: block;
-    margin: 40px auto;
+    margin: 20px auto;
     width: 240px;
+    // height: 440px;
+  }
+  div.article-image {
     height: 440px;
+    width: 100%;
+    display: block;
+    position: static;
+  }
+  div.article-preview {
+    position: static;
+    display: block;
   }
 }

@@ -1,39 +1,58 @@
-.article-wrapper {
-
-}
-
 .article {
   width: 160px;
-  margin: 20px;
+  margin: 10px;
   display: inline-block;
+  border: 5px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px 0px #929292;
+  overflow: hidden;
+}
+
+.article-preview {
+  position: absolute;
+  bottom: -1px;
+  width: 101%;
+  background-color: white;
+  display: none;
+  padding: 5px 0;
+}
+
+.article-image {
+  position: absolute;
 }
 
 .sizeone {
-  background-color: honeydew;
-  height: 400px;
+  // background-color: honeydew;
+  min-height: 400px;
+
+  .article-image {
+    background-image: url('https://www.fillmurray.com/160/400');
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+  }
 }
 
 .sizetwo {
-  background-color: #b37399;
-  height: 300px;
+  // background-color: #b37399;
+  min-height: 300px;
+
+  .article-image {
+    background-image: url('https://www.fillmurray.com/160/300');
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+  }
 }
 
 .sizethree {
-  background-color: #669999;
-  height: 500px;
-}
+  // background-color: #669999;
+  min-height: 500px;
 
-.sizefour {
-  background-color: #d2e1dd;
-  height: 400px;
-}
-
-.sizefive {
-  background-color: #003366;
-  height: 300px;
-}
-
-.sizesix {
-  background-color: #998099;
-  height: 500;
+  .article-image {
+    background-image: url('https://www.fillmurray.com/160/550');
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+  }
 }

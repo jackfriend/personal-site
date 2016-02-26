@@ -1,3 +1,7 @@
+---
+author: Jack Friend
+---
+
 CHAPTER I
 
 Down the Rabbit-Hole

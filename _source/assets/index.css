@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100,100italic);
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700,700italic,800,800italic);
+
 * {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
@@ -21,7 +23,6 @@ body {
 
 *, html, body {
     font-size: 1em;
-    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -37,6 +38,7 @@ a:visited {
     line-height: 2em;
     font-size: .9em;
     font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-menu a {
@@ -55,19 +57,19 @@ a:visited {
     color: #303030;
 }
 
-.nav-container {
-    width: 160px;
-    position: fixed;
-    bottom: 0;
-    top: 0;
-    left: 0;
+.article {
+    line-height: 1.25em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
-.article-container {
-    width: calc(100% - 180px);
-    position: absolute;
-    top: 0;
-    right: 0;
+.article h1 {
+    font-size: 1em;
+}
+
+.article h6.subheading {
+    font-size: .8em;
+    color: #727272;
 }
 
 @-webkit-keyframes bounce {
@@ -122,102 +124,6 @@ a:visited {
         -webkit-transform: translateX(-10px);
         transform: translateX(-10px);
     }
-}
-
-.bounce {
-    -webkit-animation: bounce 5s infinite;
-    animation: bounce 5s infinite;
-}
-
-.nav-wrapper {
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
-.favicon {
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-}
-
-.nav-menu {
-    text-align: right;
-    margin: 0 15px 0 0;
-}
-
-.social-media {
-    margin: 10px;
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.fa-bars.fa, .fa-times.fa {
-    display: none;
-    position: absolute;
-    top: 15px;
-    right: 30px;
-}
-
-.article {
-    width: 160px;
-    margin: 20px;
-    display: inline-block;
-}
-
-.sizeone {
-    background-color: honeydew;
-    height: 400px;
-}
-
-.sizetwo {
-    background-color: #b37399;
-    height: 300px;
-}
-
-.sizethree {
-    background-color: #669999;
-    height: 500px;
-}
-
-.sizefour {
-    background-color: #d2e1dd;
-    height: 400px;
-}
-
-.sizefive {
-    background-color: #003366;
-    height: 300px;
-}
-
-.sizesix {
-    background-color: #998099;
-    height: 500;
 }
 
 @-webkit-keyframes slidedown {
@@ -316,6 +222,137 @@ a:visited {
         opacity: 0;
         display: none;
     }
+}
+
+.nav-container {
+    width: 160px;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+}
+
+.article-container {
+    width: calc(100% - 180px);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bounce {
+    -webkit-animation: bounce 5s infinite;
+    animation: bounce 5s infinite;
+}
+
+.nav-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.favicon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.nav-menu {
+    text-align: right;
+    margin: 0 15px 0 0;
+}
+
+.social-media {
+    margin: 10px;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.fa-bars.fa, .fa-times.fa {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+.article {
+    width: 160px;
+    margin: 10px;
+    display: inline-block;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px 0px #929292;
+    overflow: hidden;
+}
+
+.article-preview {
+    position: absolute;
+    bottom: -1px;
+    width: 101%;
+    background-color: white;
+    display: none;
+    padding: 5px 0;
+}
+
+.article-image {
+    position: absolute;
+}
+
+.sizeone {
+    min-height: 400px;
+}
+
+.sizeone .article-image {
+    background-image: url("https://www.fillmurray.com/160/400");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.sizetwo {
+    min-height: 300px;
+}
+
+.sizetwo .article-image {
+    background-image: url("https://www.fillmurray.com/160/300");
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.sizethree {
+    min-height: 500px;
+}
+
+.sizethree .article-image {
+    background-image: url("https://www.fillmurray.com/160/550");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
 }
 
 @media screen and (max-width: 600px) {
@@ -450,7 +487,7 @@ a:visited {
 
 @media screen and (min-width: 376px) and (max-width: 480px) {
     div.article {
-        width: 165px;
+        width: 160px;
         margin: 15px;
     }
 
@@ -462,8 +499,8 @@ a:visited {
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
     div.article {
-        width: 157px;
-        margin: 10.25px;
+        width: 155px;
+        margin: 6px;
     }
 
     div.article-wrapper {
@@ -475,8 +512,19 @@ a:visited {
 @media screen and (max-width: 320px) {
     div.article {
         display: block;
-        margin: 40px auto;
+        margin: 20px auto;
         width: 240px;
+    }
+
+    div.article-image {
         height: 440px;
+        width: 100%;
+        display: block;
+        position: static;
+    }
+
+    div.article-preview {
+        position: static;
+        display: block;
     }
 }

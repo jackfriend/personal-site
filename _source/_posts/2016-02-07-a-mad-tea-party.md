@@ -1,3 +1,7 @@
+---
+author: Jack Friend
+---
+
 CHAPTER VII
 
 A Mad Tea-Party

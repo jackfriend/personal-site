@@ -4,6 +4,12 @@ layout: base
 {% include nav.html %}
 <div class="container article-container">
   <div class="wrapper article-wrapper">{% for article in site.posts %}
-    <div class="article size{% cycle 'one', 'two', 'three' %}"></div>{% endfor %}
+    <div href="#" class="article size{% cycle 'one', 'two', 'three' %}">
+      <div class="article-image"></div>
+      <div class="article-preview">
+        <h1>{{ article.title }}</h1>
+        <h6 class="subheading">{{ article.date }}</h6>
+      </div>
+    </div>{% endfor %}
   </div>
 </div>

@@ -1,3 +1,7 @@
+---
+author: Jack Friend
+---
+
 CHAPTER II
 
 The Pool of Tears

@@ -1,3 +1,7 @@
+---
+author: Jack Friend
+---
+
 CHAPTER VIII
 
 The Queen's Croquet-Ground

@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100,100italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700,700italic,800,800italic);
 
 *, html, body {
   font-size: 1em;
-  font-family: 'Roboto', sans-serif;;
 }
 
 a {
@@ -19,6 +19,7 @@ a {
   line-height: 2em;
   font-size: .9em;
   font-weight: 400;
+  font-family: 'Roboto', sans-serif;;
 
   a {
     color: #696969;
@@ -36,5 +37,18 @@ a {
     &:hover {
       color: #303030;
     }
+  }
+}
+
+.article {
+  line-height: 1.25em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  h1  {
+    font-size: 1em;
+  }
+  h6.subheading {
+    font-size: .8em;
+    color: #727272;
   }
 }

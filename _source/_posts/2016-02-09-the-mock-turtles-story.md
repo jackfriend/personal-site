@@ -1,3 +1,7 @@
+---
+author: Jack Friend
+---
+
 CHAPTER IX
 
 The Mock Turtle's Story

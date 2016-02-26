@@ -1,3 +1,7 @@
+---
+author: Jack Friend
+---
+
 CHAPTER V
 
 Advice from a Caterpillar

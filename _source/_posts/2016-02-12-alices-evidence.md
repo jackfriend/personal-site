@@ -1,3 +1,7 @@
+---
+author: Jack Friend
+---
+
 CHAPTER XII
 
 Alice's Evidence

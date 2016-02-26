@@ -1,3 +1,7 @@
+---
+author: Jack Friend
+---
+
 CHAPTER XI
 
 Who Stole the Tarts?

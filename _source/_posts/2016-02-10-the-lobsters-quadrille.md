@@ -1,3 +1,7 @@
+---
+author: Jack Friend
+---
+
 CHAPTER X
 
 The Lobster Quadrille

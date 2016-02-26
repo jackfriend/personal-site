@@ -1,3 +1,7 @@
+---
+author: Jack Friend
+---
+
 CHAPTER III
 
 A Caucus-Race and a Long Tale
