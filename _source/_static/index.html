@@ -1,14 +1,28 @@
 ---
 layout: base
 ---
-{% include nav.html %}
+<div class="container nav-container">
+  <div class="wrapper nav-wrapper">
+    <div class="mobile-nav-wrapper"><img src="assets/img/favicon.png" alt="Favicon" class="favicon"/><a href="#" class="ion ion-navicon-round"></a></div>
+    <ul class="nav-menu">
+      <li><a href="#"><span class="fa fa-hand-o-right bounce"></span>&nbspArticles</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <ul class="social-media">
+      <li><a href="https://www.instagram.com/jackfriend2000/" class="fa fa-instagram fa-lg"></a></li>
+      <li><a href="https://github.com/jackfriend" class="fa fa-github fa-lg"></a></li>
+      <li><a href="mailto:jackwilliamfriend@gmail.com" class="fa fa-envelope-o fa-lg"></a></li>
+    </ul>
+  </div>
+</div>
 <div class="container article-container">
   <div class="wrapper article-wrapper">{% for article in site.posts %}
     <div href="#" class="article size{% cycle 'one', 'two', 'three' %}">
       <div class="article-image"></div>
       <div class="article-preview">
-        <h1>{{ article.title }}</h1>
-        <h6 class="subheading">{{ article.date }}</h6>
+        <h1><a href="{{ article.url }}">{{ article.title }}</a></h1>
+        <h6 class="subheading">{{ article.date | date: '%B %d, %Y' }}</h6>
       </div>
     </div>{% endfor %}
   </div>

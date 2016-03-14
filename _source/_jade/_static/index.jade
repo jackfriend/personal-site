@@ -2,7 +2,22 @@
 | layout: base
 | ---
 
-| {% include nav.html %}
+.container.nav-container
+  .wrapper.nav-wrapper
+    
+    .mobile-nav-wrapper
+      img(src="assets/img/favicon.png", alt="Favicon").favicon
+      a(href="#").ion.ion-navicon-round
+      
+    ul.nav-menu
+      li: a(href="#") <span class="fa fa-hand-o-right bounce"></span>&nbspArticles
+      li: a(href="#") About
+      li: a(href="#") Contact
+      
+    ul.social-media
+      li: a(href="https://www.instagram.com/jackfriend2000/").fa.fa-instagram.fa-lg
+      li: a(href="https://github.com/jackfriend").fa.fa-github.fa-lg
+      li: a(href="mailto:jackwilliamfriend@gmail.com").fa.fa-envelope-o.fa-lg
 
 .container.article-container
   .wrapper.article-wrapper
@@ -10,8 +25,8 @@
     .article(class="size{% cycle 'one', 'two', 'three' %}", href="#")
       .article-image
       .article-preview
-        h1 {{ article.title }}
-        h6.subheading {{ article.date }}
+        h1: a(href="{{ article.url }}") {{ article.title }}
+        h6.subheading {{ article.date | date: '%B %d, %Y' }}
     | {% endfor %}
     
     

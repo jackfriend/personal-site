@@ -1,0 +1,40 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 0 #999999;
+
+  .logo .favicon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.logo {
+  display: inline-block;
+  height: 50px;
+  margin: 0 0 0 15px;
+}
+
+.prev-next {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  font-size: 1.9em;
+  margin: 8px;
+
+  a {
+    color: #696969;
+    margin: 10px;
+
+    &:hover {
+      color: #007aff;
+    }
+  }
+}

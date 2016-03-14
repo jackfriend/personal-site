@@ -1,5 +1,6 @@
 ---
 author: Jack Friend
+layout: posts
 ---
 
 CHAPTER II

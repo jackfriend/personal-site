@@ -1,9 +1,10 @@
 markdown: redcarpet
 source: _source
 destination: _site
+permalink: /posts/:title.html
 
 collections:
   static:
     output: true
-    permalink: :title.html
+    permalink: /:title.html
     layout: base

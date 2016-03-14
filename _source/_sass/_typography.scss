@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100,100italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700,700italic,800,800italic);
+@import url(https://fonts.googleapis.com/css?family=Martel:400,200,300,600,700,800,900);
 
 *, html, body {
   font-size: 1em;
@@ -14,28 +14,17 @@ a {
   }
 }
 
-
-.nav-menu {
+.nav-menu, .social-media {
   line-height: 2em;
-  font-size: .9em;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;;
+  font-size: .92em;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
 
   a {
     color: #696969;
 
     &:hover {
-      color: #2B3133;
-    }
-  }
-}
-
-.social-media {
-  a {
-    color: #4c4c4c;
-
-    &:hover {
-      color: #303030;
+      color: #007aff;
     }
   }
 }
@@ -48,7 +37,11 @@ a {
     font-size: 1em;
   }
   h6.subheading {
-    font-size: .8em;
+    font-size: .7em;
     color: #727272;
+    font-weight: 400;
+  }
+  a:hover {
+    color: #007aff;
   }
 }
