@@ -1,5 +1,10 @@
 .bounce {
   animation: bounce 5s infinite;
+
+}
+
+.current-page:hover .bounce {
+  animation: bouncealot 500ms infinite;
 }
 
 .nav-wrapper {

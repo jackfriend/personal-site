@@ -56,3 +56,30 @@
     display: none;
   }
 }
+
+
+@keyframes bouncealot {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(2, 2, 2);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
