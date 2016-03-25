@@ -1,0 +1,453 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+/*!
+Typeplate : Starter Kit
+URL ........... http://typeplate.com
+Version ....... 3.0.2
+Github ........ https://github.com/typeplate/starter-kit
+Authors ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+License ....... Creative Commmons Attribution 3.0
+License URL ... https://github.com/typeplate/starter-kit/blob/master/license.txt
+*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    margin-top: 0;
+    color: #222;
+    font-weight: 700;
+}
+
+blockquote + figcaption cite {
+    display: block;
+    font-size: inherit;
+    text-align: right;
+}
+
+body {
+    word-wrap: break-word;
+}
+
+pre code {
+    word-wrap: normal;
+}
+
+html {
+    font: normal 112.5% / 1.65 serif;
+}
+
+body {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    color: #444;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 1em 0;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 1em 0;
+}
+
+h3 {
+    font-size: 1.6em;
+    margin-bottom: 1.61616rem;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+h5 {
+    font-size: 1.3em;
+    margin: 1em 0;
+}
+
+h6 {
+    font-size: 1em;
+    margin: 1em 0;
+}
+
+p {
+    margin: auto auto 2.5em;
+    font-family: 'Times', serif;
+}
+
+p + p {
+    margin-top: -1.5em;
+}
+
+input,
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+}
+
+pre {
+    white-space: pre;
+}
+
+pre code {
+    white-space: -moz-pre-wrap;
+    white-space: pre-wrap;
+}
+
+code {
+    white-space: pre;
+    font-family: monospace;
+}
+
+abbr {
+    -webkit-font-variant: small-caps;
+    -moz-font-variant: small-caps;
+    -ms-font-variant: small-caps;
+    font-variant: small-caps;
+    font-weight: 600;
+    text-transform: lowercase;
+    color: gray;
+}
+
+abbr[title]:hover {
+    cursor: help;
+}
+
+/* My own css */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited {
+    color: #000000;
+}
+
+.title-string {
+    font-family: 'Georgia', serif;
+    font-size: .8em;
+    letter-spacing: .08em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.title-string .insult {
+    text-transform: uppercase;
+}
+
+.title-string .reply {
+    font-style: italic;
+}
+
+.author {
+    font-style: italic;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    45% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    60% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+
+    75% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    45% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    60% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+
+    75% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+}
+
+@-webkit-keyframes slidedown {
+    0% {
+        height: 60px;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes slidedown {
+    0% {
+        height: 60px;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+@-webkit-keyframes slideup {
+    0% {
+        height: 100%;
+    }
+
+    100% {
+        height: 60px;
+    }
+}
+
+@keyframes slideup {
+    0% {
+        height: 100%;
+    }
+
+    100% {
+        height: 60px;
+    }
+}
+
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@-webkit-keyframes bouncealot {
+    0% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    50% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+
+    100% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+}
+
+@keyframes bouncealot {
+    0% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    50% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+
+    100% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+}
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(2, 2, 2);
+        transform: scale3d(2, 2, 2);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(2, 2, 2);
+        transform: scale3d(2, 2, 2);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: -1px;
+    left: -1%;
+    right: -1%;
+    height: 51px;
+    width: 102%;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 #999999;
+}
+
+.logo {
+    display: inline-block;
+    height: 50px;
+    margin: 0 0 0 15px;
+}
+
+.logo .favicon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    -webkit-animation: 1s pulse infinte;
+    animation: 1s pulse infinte;
+}
+
+.prev-next {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    font-size: 1.9em;
+    background-color: #ffffff;
+}
+
+.prev-next a {
+    color: #696969;
+    margin: 10px;
+}
+
+.prev-next a:hover {
+    color: #007aff;
+}
+
+.title-string {
+    position: absolute;
+    height: 45px;
+    top: 0;
+    left: 0;
+    padding-left: 80px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+@media screen and (min-width: 0) and (max-width: 600px) {
+    .title-string {
+        display: none;
+    }
+}
+
+.title-string:hover p.insult {
+    margin-top: -45px;
+}
+
+.title-string p {
+    margin: 0px;
+    font-size: 1em;
+    line-height: 45px;
+    height: 45px;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+
+.post-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}

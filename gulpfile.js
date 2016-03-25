@@ -10,12 +10,22 @@ var gulp      = require('gulp'),
     trim      = require('gulp-trim');
 
 
-gulp.task('sass', function () {
-  return sass('_source/_sass/imports.sass')
+gulp.task('sass-index', function () {
+  return sass('_source/_sass/index.sass')
   .on('error', sass.logError)
   .pipe(prefix())
   .pipe(cleancss())
   .pipe(rename('index.css'))
+  .pipe(gulp.dest('_source/assets'));
+});
+
+
+gulp.task('sass-posts', function () {
+  return sass('_source/_sass/posts.sass')
+  .on('error', sass.logError)
+  .pipe(prefix())
+  .pipe(cleancss())
+  .pipe(rename('posts.css'))
   .pipe(gulp.dest('_source/assets'));
 });
 
@@ -54,8 +64,8 @@ gulp.task('build', function () {
 });
 
 
-gulp.task('default', ['sass', 'jade', 'js', 'browsersync'],function() {
-  gulp.watch('_source/_sass/**/*.*', ['sass']);
+gulp.task('default', ['sass-index', 'sass-posts', 'jade', 'js', 'browsersync'],function() {
+  gulp.watch('_source/_sass/**/*.*', ['sass-index', 'sass-posts']);
   gulp.watch('_source/_jade/**/*.*', ['jade']);
   gulp.watch('_source/assets/_js/*.js', ['js']);
   gulp.watch(['_source/assets/*.*', '_source/_static/**/*.*', '_source/_includes/**/*.*', '_source/_layouts/**/*.*'], ['build']);

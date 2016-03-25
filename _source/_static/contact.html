@@ -5,25 +5,14 @@ layout: base
   <div class="wrapper nav-wrapper">
     <div class="mobile-nav-wrapper"><a href="index.html"><img src="assets/img/favicon.png" alt="Favicon" class="favicon"/></a><a href="#" class="ion ion-navicon-round"></a></div>
     <ul class="nav-menu">
-      <li><a href="index.html" class="current-page"><span class="fa fa-hand-o-right bounce"></span>&nbspArticles</a></li>
+      <li><a href="index.html">Articles</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="current-page"><span class="fa fa-hand-o-right bounce"></span>&nbspContact</a></li>
     </ul>
     <ul class="social-media">
       <li><a href="https://www.instagram.com/jackfriend2000/" class="fa fa-instagram fa-lg"></a></li>
       <li><a href="https://github.com/jackfriend" class="fa fa-github fa-lg"></a></li>
       <li><a href="mailto:jackwilliamfriend@gmail.com" class="fa fa-envelope-o fa-lg"></a></li>
     </ul>
-  </div>
-</div>
-<div class="container article-container">
-  <div class="wrapper article-wrapper">{% for article in site.posts %}
-    <div href="#" class="article size{% cycle 'one', 'two', 'three' %}">
-      <div class="article-image"></div>
-      <div class="article-preview">
-        <h1><a href="{{ article.url }}">{{ article.title }}</a></h1>
-        <h6 class="subheading">{{ article.date | date: '%B %d, %Y' }}</h6>
-      </div>
-    </div>{% endfor %}
   </div>
 </div>

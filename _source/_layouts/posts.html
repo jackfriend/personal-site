@@ -2,22 +2,25 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/ico" href="../../../../favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/index.css">
+    <link rel="stylesheet" href="../../../../assets/posts.css">
     <title>{{ page.title }}</title>
   </head>
   <body>
     <div class="container post-container">{{ content }}</div>
     <div class="footer">
-      <div class="logo"><a href="#" class="logo-anc"><img src="../assets/img/favicon.png" alt="Favicon" class="favicon"><a href="#" class="title-string">
+      <div class="logo"><a href="../../../../index.html" class="logo-anc"><img src="../../../../assets/img/favicon.png" alt="Favicon" class="favicon"><a href="#" class="title-string">
             <p class="insult"></p>
-            <p class="reply"></p></a></a></div>
-      <div class="prev-next"><a href="#"><i class="ion ion-arrow-left-c"></i></a><a href="#"><i class="ion ion-arrow-right-c"></i></a></div>
+            <p class="reply"><i class="em em-stuck_out_tongue_closed_eyes"></i></p></a></a></div>
+      <div class="prev-next">{{ if page.previous }}<a href="{{ page.previous.url }}"><i class="ion ion-arrow-left-c"></i></a>{{ endif }}
+        {{ if page.next }}<a href="{{ page.next.url }}"><i class="ion ion-arrow-right-c"></i></a>{{ endif }}
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
-    <script src="../assets/functions.js"></script>
+    <script src="../../../../assets/functions.js"></script>
   </body>
 </html>
