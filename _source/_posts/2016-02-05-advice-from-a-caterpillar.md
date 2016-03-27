@@ -3,10 +3,6 @@ author: Jack Friend
 layout: posts
 ---
 
-# CHAPTER V
-
-## Advice from a Caterpillar
-
 The Caterpillar and Alice looked at each other for some time in silence: at last the Caterpillar took the hookah out of its mouth, and addressed her in a languid, sleepy voice.
 'Who are you?' said the Caterpillar.
 

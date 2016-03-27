@@ -12,13 +12,13 @@ layout: base
     <ul class="social-media">
       <li><a href="https://www.instagram.com/jackfriend2000/" class="fa fa-instagram fa-lg"></a></li>
       <li><a href="https://github.com/jackfriend" class="fa fa-github fa-lg"></a></li>
-      <li><a href="mailto:jackwilliamfriend@gmail.com" class="fa fa-envelope-o fa-lg"></a></li>
+      <li><a href="contact.html" class="fa fa-envelope-o fa-lg"></a></li>
     </ul>
   </div>
 </div>
 <div class="container article-container">
   <div class="wrapper article-wrapper">{% for article in site.posts %}
-    <div href="#" class="article size{% cycle 'one', 'two', 'three' %}">
+    <div href="{{ article.url }}" class="article size{% cycle 'one', 'two', 'three' %}">
       <div class="article-image"></div>
       <div class="article-preview">
         <h1><a href="{{ article.url }}">{{ article.title }}</a></h1>

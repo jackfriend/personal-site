@@ -3,10 +3,6 @@ author: Jack Friend
 layout: posts
 ---
 
-# CHAPTER IX
-
-## The Mock Turtle's Story
-
 'You can't think how glad I am to see you again, you dear old thing!' said the Duchess, as she tucked her arm affectionately into Alice's, and they walked off together.
 Alice was very glad to find her in such a pleasant temper, and thought to herself that perhaps it was only the pepper that had made her so savage when they met in the kitchen.
 

@@ -1,30 +1,31 @@
 doctype
 html
-  head
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel="icon", type="image/ico", href="../../../../favicon.ico")
-    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
-    link(rel="stylesheet", href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
-    link(href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet")
-    link(rel="stylesheet", href="../../../../assets/posts.css")
-    title {{ page.title }}
-  body
-    .container.post-container
-      | {{ content }}
-    .footer
-      .logo: a(href="../../../../index.html").logo-anc
-        img(src="../../../../assets/img/favicon.png", alt="Favicon").favicon
-        a(href="#").title-string
-          p.insult
-          p.reply <i class="em em-stuck_out_tongue_closed_eyes"></i>
-      .prev-next
-        | {{ if page.previous }}
-        a(href="{{ page.previous.url }}"): <i class="ion ion-arrow-left-c"></i>
-        | {{ endif }}
-        | {{ if page.next }}
-        a(href="{{ page.next.url }}"): <i class="ion ion-arrow-right-c"></i>
-        | {{ endif }}
-      
-    script(src="https://code.jquery.com/jquery-2.2.0.min.js")
-    script(src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js")
-    script(src="../../../../assets/functions.js")
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="icon", type="image/ico", href="../../../../favicon.ico")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+        link(href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet")
+        link(rel="stylesheet", href="../../../../assets/posts.css")
+        title {{ page.title }}
+    body
+        .container.post-container
+            h1 {{ page.title }}
+            | <i class="author">By {{ page.author }} on {{ page.date | date: '%B %d, %Y' }}</i>
+            | {{ content }}
+        .footer
+            .logo: a(href="../../../../index.html").logo-anc
+                img(src="../../../../assets/img/favicon.png", alt="Favicon").favicon
+                a(href="#").title-string
+                    p.insult
+                    p.reply <i class="em em-stuck_out_tongue_closed_eyes"></i>
+            .prev-next
+                | {% if page.next != nil%}
+                a(href="{{ page.next.url }}"): <i class="ion ion-arrow-left-c"></i>
+                | {% endif %}
+                | {% if page.previous != nil %}
+                a(href="{{ page.previous.url }}"): <i class="ion ion-arrow-right-c"></i>
+                | {% endif %}
+
+        script(src="https://code.jquery.com/jquery-2.2.0.min.js")
+        script(src="../../../../assets/functions.js")

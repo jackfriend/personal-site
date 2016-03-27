@@ -28,6 +28,7 @@ var insultArray = [
 var insult = insultArray[Math.floor(Math.random() * insultArray.length)];
 $('.insult').append(insult);
 
+
 if (    $(window).width()    <= 600) {
   $('.nav-menu').hide();
   $('.social-media').hide();

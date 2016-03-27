@@ -10,17 +10,19 @@
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <div class="container post-container">{{ content }}</div>
+    <div class="container post-container">
+      <h1>{{ page.title }}</h1><i class="author">By {{ page.author }} on {{ page.date | date: '%B %d, %Y' }}</i>
+      {{ content }}
+    </div>
     <div class="footer">
       <div class="logo"><a href="../../../../index.html" class="logo-anc"><img src="../../../../assets/img/favicon.png" alt="Favicon" class="favicon"><a href="#" class="title-string">
             <p class="insult"></p>
             <p class="reply"><i class="em em-stuck_out_tongue_closed_eyes"></i></p></a></a></div>
-      <div class="prev-next">{{ if page.previous }}<a href="{{ page.previous.url }}"><i class="ion ion-arrow-left-c"></i></a>{{ endif }}
-        {{ if page.next }}<a href="{{ page.next.url }}"><i class="ion ion-arrow-right-c"></i></a>{{ endif }}
+      <div class="prev-next">{% if page.next != nil%}<a href="{{ page.next.url }}"><i class="ion ion-arrow-left-c"></i></a>{% endif %}
+        {% if page.previous != nil %}<a href="{{ page.previous.url }}"><i class="ion ion-arrow-right-c"></i></a>{% endif %}
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
     <script src="../../../../assets/functions.js"></script>
   </body>
 </html>
