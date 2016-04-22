@@ -219,6 +219,40 @@
         transform: scale3d(1, 1, 1);
     }
 }
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink .85s infinite;
+    animation: blink .85s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 /*!
 Typeplate : Starter Kit
 URL ........... http://typeplate.com
@@ -460,4 +494,11 @@ a:visited {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .post-container {
+        width: 90%;
+        margin: 0 auto;
+    }
 }

@@ -1,0 +1,84 @@
+.contact-container {
+    width: calc(100% - 160px);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#mapid {
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+.form {
+    @include centerer;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 90%;
+    z-index: 1;
+    box-shadow: 1px 1px 5px 0 #828282;
+
+    input, textarea {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        border-radius: 5px;
+        border: solid 1px #dcdcdc;
+        padding: 5px;
+
+        &:focus {
+            border-color: rgba(#007aff, .5);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(#007aff, .4);
+            outline: 0 none;
+        }
+
+        &[type="submit"] {
+            background-color: #e74c3c;
+            padding: 10px;
+            width: calc(90% + 10px);
+        }
+    }
+
+    textarea {
+        height: 7em;
+    }
+}
+
+.form-header {
+    width: 100%;
+    @include border-top-radius(5px);
+    background-color: #ffffff;
+    box-shadow: 0 5px 3px -3px darken(#ffffff, 20%);
+
+    position: relative;
+    z-index: 2;
+
+    h1 {
+        padding: 15px 25px 0 25px;
+    }
+
+    p {
+        padding: 15px 25px 20px 25px;
+    }
+
+    .fa-times {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+.form-body {
+    width: 100%;
+    @include border-bottom-radius(5px);
+    background-color: darken(#ffffff, 5%);
+    padding: 15px 0 15px 0;
+
+    position: relative;
+    z-index: 1;
+}

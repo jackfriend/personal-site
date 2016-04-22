@@ -1,0 +1,142 @@
+.bounce {
+    animation: bounce 5s infinite;
+
+}
+
+.current-page:hover .bounce {
+    animation: bouncealot 500ms infinite;
+}
+
+.nav-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.favicon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.nav-menu {
+    text-align: right;
+    margin: 0 15px 0 0;
+}
+
+.social-media {
+    margin: 10px;
+    display: inline-flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.ion-close-round,
+.ion-navicon-round {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.8em;
+}
+
+$speed: 1s;
+@media screen and (max-width: 600px) {
+    .nav-container.clicked {
+        animation: slidedown $speed forwards;
+
+        .nav-menu {
+            display: block;
+            animation: appear $speed forwards;
+        }
+
+        .social-media {
+            display: inline-flex;
+
+            animation: appear $speed forwards;
+        }
+
+        .ion-close-round,
+        .ion-navicon-round {
+            display: block;
+        }
+
+        .bounce {
+            display: none;
+        }
+    }
+
+    .nav-container.unclicked {
+        animation: slideup $speed forwards;
+
+        .nav-menu {
+            animation: disappear $speed forwards;
+        }
+
+        .social-media {
+            animation: disappear $speed forwards;
+        }
+    }
+
+    .nav-container {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        border-bottom: 2px solid #000000;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        text-align: center;
+        margin: 0;
+        font-size: 1.2em;
+        line-height: 2em;
+    }
+
+    .social-media {
+        width: 200px;
+        margin: 0 auto 40px;
+        font-size: 1.5em;
+    }
+
+    .favicon {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+
+    .ion-close-round,
+    .ion-navicon-round {
+        display: block;
+    }
+
+    .article-container, .contact-container {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+}

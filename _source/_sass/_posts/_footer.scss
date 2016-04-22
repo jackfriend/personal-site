@@ -1,0 +1,68 @@
+.footer {
+    position: fixed;
+    bottom: -1px;
+    left: -1%;
+    right: -1%;
+    height: 51px;
+
+    width: 102%;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 #999999;
+}
+
+.logo {
+    display: inline-block;
+    height: 50px;
+    margin: 0 15px;
+
+    .favicon {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+        animation: 1s pulse infinte;
+    }
+}
+
+.prev-next {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    font-size: 1.9em;
+    background-color: #ffffff;
+    margin: 0 15px;
+
+    a {
+        color: #696969;
+        margin: 10px;
+
+        &:hover {
+            color: #007aff;
+        }
+    }
+}
+
+.title-string {
+    position: absolute;
+    height: 45px;
+    top: 0;
+    left: 0;
+    padding-left: 80px;
+    overflow: hidden;
+    display: inline-block;
+    @include bp(0, 600px) {
+        display: none;
+    };
+}
+
+.title-string:hover p.insult {
+    margin-top: -45px;
+}
+
+.title-string p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 45px;
+    height: 45px;
+    transition: all 0.15s ease-in-out;
+}

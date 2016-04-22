@@ -1,0 +1,34 @@
+.about-container {
+    width: calc(100% - 160px);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.terminal {
+    @include centerer;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: -2px -2px 48px 2px rgba(0,0,0,0.64);
+}
+
+.terminal-heading {
+    @include border-top-radius(8px);
+    background-color: #eee;
+    text-align: center;
+    line-height: 2em;
+}
+
+.terminal-body {
+    padding: 20px;
+    background-color: #222;
+    height: 100%;
+    @include border-bottom-radius(10px);
+
+    p {
+        margin: 0 0 0 20px;
+        height: 1em;
+    }
+}

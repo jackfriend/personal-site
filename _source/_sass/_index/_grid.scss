@@ -1,0 +1,95 @@
+.nav-container {
+    width: 160px;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+}
+
+.article-container {
+    width: calc(100% - 160px);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.article-wrapper {
+    width: calc(100% - 20px);
+    left: 20px;
+}
+
+
+@media screen and (min-width: 1281px) {
+    div.article {
+        width: 160px;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    div.article {
+        width: 160px;
+    }
+}
+@media screen and (min-width: 961px) and (max-width: 1024px) {
+    div.article {
+        width: 160px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 960px) {
+    div.article {
+        width: 150px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    div.article {
+        width: 145px;
+    }
+}
+@media screen and (min-width: 376px) and (max-width: 480px) {
+    div.article {
+        width: 160px;
+        margin: 15px;
+    }
+
+    div.article-wrapper {
+        width: 400px;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    div.article {
+        width: 155px;
+        margin: 6px;
+    }
+
+    div.article-wrapper {
+        width: 365px;
+        margin: auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    div.article {
+        display: block;
+        margin: 20px auto;
+        width: 240px;
+    }
+
+    div.article-image {
+        height: 440px;
+        width: 100%;
+        display: block;
+        position: static;
+    }
+
+    div.article-preview {
+        position: static;
+        display: block;
+    }
+    
+    div.article-wrapper {
+        width: 100%;
+        margin: auto;
+        display: block;
+    }
+}
