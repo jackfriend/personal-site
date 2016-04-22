@@ -58,16 +58,21 @@ gulp.task('js', function () {
 });
 
 
-gulp.task('build', function () {
+gulp.task('jekyll-build', function () {
   gulp.src('./')
   .pipe(shell('jekyll build'));
 });
 
 
-gulp.task('default', ['sass-index', 'sass-posts', 'jade', 'js', 'browsersync'],function() {
+gulp.task('build', ['sass-index', 'sass-posts', 'jade', 'js', 'jekyll-build'], function () {
+    // blank function
+});
+
+
+gulp.task('default', ['sass-index', 'sass-posts', 'jade', 'js', 'browsersync'], function() {
   gulp.watch('_source/_sass/**/*.*', ['sass-index', 'sass-posts']);
   gulp.watch('_source/_jade/**/*.*', ['jade']);
   gulp.watch('_source/assets/_js/*.js', ['js']);
-  gulp.watch(['_source/assets/*.*', '_source/_static/**/*.*', '_source/_includes/**/*.*', '_source/_layouts/**/*.*'], ['build']);
+  gulp.watch(['_source/assets/*.*', '_source/_static/**/*.*', '_source/_includes/**/*.*', '_source/_layouts/**/*.*'], ['jekyll-build']);
   gulp.watch('_site/**/*.*').on('change', browser.reload);
 });
