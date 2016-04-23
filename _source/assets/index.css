@@ -420,34 +420,42 @@ a:visited {
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 768px) {
     div.article {
-        width: 145px;
-    }
-}
-
-@media screen and (min-width: 376px) and (max-width: 480px) {
-    div.article {
-        width: 160px;
-        margin: 15px;
+        width: 130px;
+        margin: 10px;
     }
 
     div.article-wrapper {
-        width: 400px;
         margin: auto;
+        position: relative;
+        left: 0;
+        right: 0;
     }
 }
 
-@media screen and (min-width: 321px) and (max-width: 375px) {
+@media screen and (min-width: 481px) and (max-width: 600px) {
     div.article {
-        width: 155px;
-        margin: 6px;
+        width: 130px;
+        margin: 10px;
     }
 
     div.article-wrapper {
-        width: 365px;
         margin: auto;
-        display: block;
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    div.article {
+        width: 130px;
+        margin: 10px;
+    }
+
+    div.article-wrapper {
+        margin: auto;
+        width: 320px;
+        left: 0;
     }
 }
 

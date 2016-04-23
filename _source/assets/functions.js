@@ -123,8 +123,3 @@ $('.typing-space').typed({
     backSpeed: 25,
     backDelay: 1000
 });
-
-if ($(window).width() < 800) {
-    alert('Your screen is too small to use the About page. The page redirected to contact.html')
-    window.location.replace('contact.html');
-}
