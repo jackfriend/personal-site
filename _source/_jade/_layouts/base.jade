@@ -6,7 +6,7 @@ html
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
     link(rel="stylesheet", href="/assets/index.css")
-    title Jack Friend {{ page.title }}
+    title {{ page.title }}
     <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-76763758-1', 'auto');ga('send', 'pageview');</script>
     <script type="application/ld+json">{"@context" : "http://schema.org", "@type" : "WebSite", "name" : "Jack Friend", "alternateName" : "jack friend", "url" : "http://www.jackfriend.com"}</script>
   body
@@ -15,5 +15,5 @@ html
     script(src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js")
     script(src="assets/functions.js")
     | {% if page.title == 'about' %}
-    | <script type="text/javascript">if ($(window).width() < 800) {alert('Your screen is too small to use the About page. The page redirected to contact.html')window.location.replace('contact.html');}</script>
+    | <script>if ($(window).width() < 800) {alert('Your screen is too small to use the About page. The page redirected to contact.html')window.location.replace('contact.html');}</script>
     | {% endif %}
